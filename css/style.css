@@ -1,0 +1,74 @@
+:root {
+    --primary: #c3ff0f;
+    --secondary: rgb(0, 144, 22);
+    --light: #f4f4f4;
+    --dark: #333;
+
+    --title: 'Raleway', sans-serif;
+    --text: 'Quicksand', sans-serif;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+p {
+    font-family: var(--text);
+}
+
+
+body {
+    font-family: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    color: whitesmoke;
+    background-color: rgb(95, 179, 11);
+    display: flex;
+    gap: 1rem; /* Adjust the space between items */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    position: fixed;
+    text-decoration: none;
+}
+
+
+.headerNav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3rem;
+}
+
+.navLink {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-left: 3.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px 16px;
+    border-radius: 1.6rem;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.navLink:hover {
+    background-color: rgb(47, 117, 7);
+}
+
+.giveup:hover {
+    background-color: rgb(166, 0, 0);
+}

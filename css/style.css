@@ -61,12 +61,14 @@ a {
     color: whitesmoke;
     padding: 8px 16px;
     border-radius: 1.6rem;
+    border: 0.1rem solid rgba(80, 151, 8, 0.964);
     text-decoration: none;
     transition: .5s;
 }
 
 .navLink:hover {
     background-color: rgb(47, 117, 7);
+    border-color: rgba(44, 108, 7, 0.966);
 }
 
 .giveup:hover {

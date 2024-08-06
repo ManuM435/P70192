@@ -26,6 +26,7 @@ body {
     font-family: var(--text);
     margin: 0;
     padding: 0;
+
 }
 
 a {
@@ -43,6 +44,7 @@ a {
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
     position: fixed;
+    top: 0;
     text-decoration: none;
 }
 
@@ -73,4 +75,57 @@ a {
 
 .giveup:hover {
     background-color: rgb(166, 0, 0);
+}
+
+.container {
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.panel {
+    border: 1px solid #ccc;
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.panel h2 {
+    font-family: 'Pt Sans', sans-serif;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.password-input {
+    border: 0.075rem solid rgb(20, 20, 20);
+    border-radius: 8px 0 0 8px;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.submit-button {
+    background-color: rgb(128, 0, 128);
+    color: white;
+    border: 0.075rem solid rgb(20, 20, 20);
+    border-radius: 0 8px 8px 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: rgb(128, 0, 128, 0.9);
 }

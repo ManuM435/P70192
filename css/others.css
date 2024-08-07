@@ -1,0 +1,88 @@
+#hints {
+    margin: 2rem auto;
+    margin-top: 3rem;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 1600px; /* Adjust the width as needed */
+    padding: 0 1rem; /* Add padding to the sides */
+}
+
+#hints h1 {
+    text-align: center; /* Center the title */
+    font-size: 2rem; /* Adjust font size */
+    margin-bottom: 1.5rem; /* Space below the title */
+    font-family: 'Raleway', sans-serif; /* Match header font */
+    color: #2b2b2b; /* Dark gray color for better readability */
+    font-weight: bold;
+}
+
+.row {
+    margin-left: 0; /* Remove extra margin on the left */
+    margin-right: 0; /* Remove extra margin on the right */
+}
+
+/* Increase column width */
+@media (min-width: 768px) { /* Adjust for medium devices and up */
+    .row > .col-md-6 {
+        flex: 0 0 50%; /* Make each column 50% of the row width */
+        max-width: 50%; /* Ensure column does not exceed 50% of the row width */
+    }
+}
+
+/* Ensure the cards fill their columns */
+.card {
+    width: 100%; /* Ensure each card takes up the full width of its column */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/* Adjust card header styling */
+.card-header {
+    display: flex;
+    justify-content: space-between; /* Space out the title and button */
+    align-items: center;
+}
+
+/* Adjust card body styling for expansion */
+.collapse {
+    padding: 1rem; /* Add some padding inside the collapsible content */
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Lighten button background on hover */
+    text-decoration: none;
+    color: black; 
+}
+
+.btn.toggle-btn {
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn.toggle-btn:focus, .btn.toggle-btn:active {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif; /* Match header font */
+    font-size: 1rem; /* Adjust button font size */
+    color: black; /* Button text color */
+    background-color: rgba(0, 0, 0, 0.15); /* Button background color */
+    border: none; /* Remove button border */
+    padding: 0.2rem 0.6rem; /* Adjust button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}

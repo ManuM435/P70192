@@ -23,10 +23,10 @@ p {
 
 
 body {
+    background-color: #FFE5B4;
     font-family: var(--text);
     margin: 0;
     padding: 0;
-
 }
 
 a {
@@ -37,8 +37,8 @@ a {
 .header {
     width: 100%;
     height: 5rem;
-    color: whitesmoke;
-    background-color: rgb(95, 179, 11);
+    color: rgb(27, 22, 22);
+    background-color: #ffd992;
     display: flex;
     gap: 1rem; /* Adjust the space between items */
     justify-content: flex-start; /* Align items to the left */
@@ -60,21 +60,21 @@ a {
     font-size: 1.25rem;
     margin-left: 3.5rem;
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(27, 22, 22);
     padding: 8px 16px;
     border-radius: 1.6rem;
-    border: 0.1rem solid rgba(80, 151, 8, 0.964);
     text-decoration: none;
     transition: .5s;
 }
 
 .navLink:hover {
-    background-color: rgb(47, 117, 7);
-    border-color: rgba(44, 108, 7, 0.966);
+    background-color: #f4b43c;
+    border-color: #c88b19;
 }
 
 .giveup:hover {
-    background-color: rgb(166, 0, 0);
+    border-color: rgb(124, 0, 0);
+    background-color: rgb(181, 0, 0);
 }
 
 .container {
@@ -90,8 +90,8 @@ a {
 }
 
 .panel {
-    border: 1px solid #ccc;
-    background-color: yellow;
+    border: 1px solid #FF7F50;
+    background-color: #FF7F50;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -99,8 +99,15 @@ a {
 
 .panel h2 {
     font-family: 'Pt Sans', sans-serif;
+    font-weight: bold;
+    color: var(--dark);
+    font-size: 1.6rem;
     margin-top: 0rem;
     margin-bottom: 1rem;
+}
+
+.clue {
+    color: black;
 }
 
 .input-group {
@@ -118,8 +125,8 @@ a {
 }
 
 .submit-button {
-    background-color: rgb(128, 0, 128);
-    color: white;
+    background-color: rgb(243, 141, 45);
+    color: rgb(0, 0, 0);
     border: 0.075rem solid rgb(20, 20, 20);
     border-radius: 0 8px 8px 0;
     padding: 0.5rem 1rem;
@@ -128,5 +135,5 @@ a {
 }
 
 .submit-button:hover {
-    background-color: rgb(128, 0, 128, 0.9);
+    background-color: rgb(243, 141, 45, 0.86);
 }

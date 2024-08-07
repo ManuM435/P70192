@@ -91,6 +91,10 @@ a {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem; /* Adjust the row gap as needed */
     }
+    .navLink {
+        font-size: 1rem;
+        margin-left: 1.5rem;
+    }
 }
 
 .panel {
@@ -162,22 +166,41 @@ a {
 
 @keyframes shake {
     0% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    50% { transform: translateX(10px); }
-    75% { transform: translateX(-10px); }
+    25% { transform: translateX(-7px); }
+    50% { transform: translateX(7px); }
+    75% { transform: translateX(-7px); }
     100% { transform: translateX(0); }
 }
 
-.panel.error {
-    background-color: #fb3232; /* Red color for error */
-    border: 1px solid #FF0000; /* Optional: red border for visibility */
-    animation: shake 0.5s ease;
+.panel.shake {
+    animation: shake 0.45s;
 }
 
+.panel.wrong {
+    background-color: #fb3232;
+    animation: shake 0.45s;
+}
 .panel.unlocked {
     background-color: #08ff42; /* Light green background for unlocked state */
     border: 1px solid #00ca2f; /* Green border for unlocked state */
 }
+
+/* .panel.expecting {
+    background-color: navy;
+    color: white
+}
+
+.panel.expecting * {
+    color: white;
+}
+
+.panel.expecting .clue {
+    color: white;
+}
+
+.panel.expecting .password-input {
+    color: black;
+} */
 
 
 

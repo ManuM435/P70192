@@ -8,7 +8,6 @@
     --text: 'Quicksand', sans-serif;
 }
 
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -20,7 +19,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--text);
 }
-
 
 body {
     background-color: #FFE5B4;
@@ -40,14 +38,13 @@ a {
     color: rgb(27, 22, 22);
     background-color: #ffd992;
     display: flex;
-    gap: 1rem; /* Adjust the space between items */
-    justify-content: flex-start; /* Align items to the left */
+    gap: 1rem;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     top: 0;
     text-decoration: none;
 }
-
 
 .headerNav {
     display: flex;
@@ -97,8 +94,8 @@ a {
     text-align: center;
 }
 
-.panel h2 {
-    font-family: 'Pt Sans', sans-serif;
+.panel .card-title {
+    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     color: var(--dark);
     font-size: 1.6rem;
@@ -110,11 +107,10 @@ a {
     color: black;
 }
 
-.input-group {
+.input-group-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
 }
 
 .password-input {
@@ -122,6 +118,7 @@ a {
     border-radius: 8px 0 0 8px;
     padding: 0.5rem;
     outline: none;
+    margin-right: 0;
 }
 
 .submit-button {
@@ -135,5 +132,22 @@ a {
 }
 
 .submit-button:hover {
-    background-color: rgb(243, 141, 45, 0.86);
+    background-color: rgb(255, 186, 122);
+}
+
+/* Panel stages */
+.panel.expecting .input-group-wrapper {
+    display: flex !important;
+}
+
+.panel.locked .input-group-wrapper {
+    display: none;
+}
+
+.panel.unlocked .input-group-wrapper {
+    display: none;
+}
+
+.panel.unlocked .clue {
+    display: block !important;
 }

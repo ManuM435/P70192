@@ -1,24 +1,51 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const passwords = ['password1', 'password2', 'password3', 'password4', 'password5', 'password6', 'password7', 'password8', 'password9', 'password10', 'password11', 'password12'];
+    // Define the passwords for each panel
+    const passwords = [
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi',
+        'juanchi'
+    ];
 
-    function checkPassword(panelIndex) {
-        const passwordInput = document.getElementById(`password${panelIndex}`);
-        const errorMessage = document.getElementById(`error${panelIndex}`);
-        const clue = document.getElementById(`clue${panelIndex}`);
-        
-        if (passwordInput.value === passwords[panelIndex - 1]) {
-            document.getElementById(`panel${panelIndex}`).classList.remove('expecting');
-            document.getElementById(`panel${panelIndex}`).classList.add('unlocked');
-            clue.style.display = 'block';
-            errorMessage.style.display = 'none';
+    // Function to check the password
+    function checkPassword(panelNumber) {
+        // Get the entered password and the correct password
+        const enteredPassword = document.getElementById(`password${panelNumber}`).value;
+        const correctPassword = passwords[panelNumber - 1]; // panelNumber is 1-based
 
-            if (panelIndex < passwords.length) {
-                document.getElementById(`panel${panelIndex + 1}`).classList.add('expecting');
-                document.getElementById(`password${panelIndex + 1}`).removeAttribute('disabled');
+        // Get the panel and error message element
+        const panel = document.getElementById(`panel${panelNumber}`);
+        const errorMessage = document.getElementById(`error${panelNumber}`);
+
+        if (enteredPassword === correctPassword) {
+            // Unlock the panel
+            panel.classList.remove('expecting');
+            panel.classList.add('unlocked');
+            document.getElementById(`clue${panelNumber}`).style.display = 'block';
+
+            // Disable the current panel's input and enable the next panel's input
+            if (panelNumber < passwords.length) {
+                document.getElementById(`password${panelNumber + 1}`).removeAttribute('disabled');
             }
-            passwordInput.disabled = true;
+
+            // Remove error class if it was previously added
+            panel.classList.remove('error');
         } else {
-            errorMessage.style.display = 'block';
+            // Apply error class to panel for shaking effect
+            panel.classList.add('error');
+
+            // Remove the error class after animation ends
+            setTimeout(() => {
+                panel.classList.remove('error');
+            }, 1000); // Duration of the shaking animation
         }
     }
 

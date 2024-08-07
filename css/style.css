@@ -94,8 +94,8 @@ a {
 }
 
 .panel {
-    border: 1px solid #FF7F50;
-    background-color: #FF7F50;
+    border: 1px solid #ff9b76;
+    background-color: #ffb69b;
     height: 10rem;
     padding: 1rem;
     border-radius: 8px;
@@ -169,8 +169,11 @@ a {
 }
 
 .panel.error {
-    background-color: #FF4C4C; /* Red color for error */
+    background-color: #fb3232; /* Red color for error */
     border: 1px solid #FF0000; /* Optional: red border for visibility */
-    animation: shake 1s ease;
+    animation: shake 0.5s ease;
 }
+
+
+
 

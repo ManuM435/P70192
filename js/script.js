@@ -1,26 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Example passwords for each panel
     const passwords = ['password1', 'password2', 'password3', 'password4', 'password5', 'password6', 'password7', 'password8', 'password9', 'password10', 'password11', 'password12'];
 
-    function checkPassword(panelNumber) {
-        const passwordInput = document.getElementById(`password${panelNumber}`);
-        const clue = document.getElementById(`clue${panelNumber}`);
-        const enteredPassword = passwordInput.value;
+    function checkPassword(panelIndex) {
+        const passwordInput = document.getElementById(`password${panelIndex}`);
+        const errorMessage = document.getElementById(`error${panelIndex}`);
+        const clue = document.getElementById(`clue${panelIndex}`);
         
-        if (enteredPassword === passwords[panelNumber - 1]) {
+        if (passwordInput.value === passwords[panelIndex - 1]) {
+            document.getElementById(`panel${panelIndex}`).classList.remove('expecting');
+            document.getElementById(`panel${panelIndex}`).classList.add('unlocked');
             clue.style.display = 'block';
-            passwordInput.value = '';
-            document.getElementById(`panel${panelNumber}`).classList.remove('expecting');
-            document.getElementById(`panel${panelNumber}`).classList.add('unlocked');
+            errorMessage.style.display = 'none';
 
-            if (panelNumber < 12) {
-                document.getElementById(`panel${panelNumber + 1}`).classList.remove('locked');
-                document.getElementById(`panel${panelNumber + 1}`).classList.add('expecting');
+            if (panelIndex < passwords.length) {
+                document.getElementById(`panel${panelIndex + 1}`).classList.add('expecting');
+                document.getElementById(`password${panelIndex + 1}`).removeAttribute('disabled');
             }
+            passwordInput.disabled = true;
         } else {
-            alert('Incorrect password. Please try again.');
+            errorMessage.style.display = 'block';
         }
     }
 
+    // Initially disable all inputs except for the first one
+    for (let i = 2; i <= passwords.length; i++) {
+        document.getElementById(`password${i}`).setAttribute('disabled', 'true');
+    }
+
+    // Make checkPassword function available globally
     window.checkPassword = checkPassword;
 });

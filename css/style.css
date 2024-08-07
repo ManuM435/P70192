@@ -151,3 +151,10 @@ a {
 .panel.unlocked .clue {
     display: block !important;
 }
+
+.error-message {
+    margin-top: 1rem;
+    display: none;
+    color: navy;
+    font-weight: bold;
+}

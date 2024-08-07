@@ -86,9 +86,17 @@ a {
     row-gap: 4rem;
 }
 
+@media (max-width: 768px) { /* Adjust the max-width value based on your needs */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem; /* Adjust the row gap as needed */
+    }
+}
+
 .panel {
     border: 1px solid #FF7F50;
     background-color: #FF7F50;
+    height: 10rem;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -152,9 +160,17 @@ a {
     display: block !important;
 }
 
-.error-message {
-    margin-top: 1rem;
-    display: none;
-    color: navy;
-    font-weight: bold;
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
 }
+
+.panel.error {
+    background-color: #FF4C4C; /* Red color for error */
+    border: 1px solid #FF0000; /* Optional: red border for visibility */
+    animation: shake 1s ease;
+}
+

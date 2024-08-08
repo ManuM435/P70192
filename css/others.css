@@ -10,10 +10,15 @@
     margin-top: 3rem;
     text-align: center; /* Center the title */
     font-size: 2rem; /* Adjust font size */
-    margin-bottom: 1.5rem; /* Space below the title */
+    margin-bottom: 0; /* Space below the title */
     font-family: 'Raleway', sans-serif; /* Match header font */
     color: #2b2b2b; /* Dark gray color for better readability */
     font-weight: bold;
+}
+
+.container {
+    margin-top: 1rem;
+    padding: 0 1rem; /* Add padding to the sides */
 }
 
 .clue-number {

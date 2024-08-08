@@ -16,6 +16,16 @@
     font-weight: bold;
 }
 
+.clue-number {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-top: 2rem; /* Space above the clue number */
+    margin-bottom: 1rem; /* Space below the clue number */
+    font-family: 'Raleway', sans-serif; /* Match header font */
+    color: #2b2b2b; /* Dark gray color for better readability */
+    font-weight: bold;
+    text-align: center; /* Center the clue number */
+}
+
 .row {
     margin-left: 0; /* Remove extra margin on the left */
     margin-right: 0; /* Remove extra margin on the right */
@@ -36,7 +46,6 @@
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     background-color: peachpuff;
 }
-
 
 /* Adjust card header styling */
 .card-header {

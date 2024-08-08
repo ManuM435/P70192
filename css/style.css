@@ -67,6 +67,7 @@ a {
 .navLink:hover {
     background-color: #f4b43c;
     border-color: #c88b19;
+    text-decoration: none;
 }
 
 .giveup:hover {

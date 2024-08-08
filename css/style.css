@@ -165,22 +165,23 @@ a {
     display: block !important;
 }
 
+.panel.error {
+    animation: shake 0.5s;
+    background-color: red;
+}
+
 @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-7px); }
-    50% { transform: translateX(7px); }
-    75% { transform: translateX(-7px); }
-    100% { transform: translateX(0); }
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    50% { transform: translateX(8px); }
+    75% { transform: translateX(-8px); }
 }
 
-.panel.shake {
-    animation: shake 0.45s;
+.shake {
+    animation: shake 0.5s;
+    background-color: red; /* Turn red while shaking */
 }
 
-.panel.wrong {
-    background-color: #fb3232;
-    animation: shake 0.45s;
-}
 .panel.unlocked {
     background-color: #08ff42; /* Light green background for unlocked state */
     border: 1px solid #00ca2f; /* Green border for unlocked state */

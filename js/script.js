@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Define the passwords for each panel
     const passwords = [
-        '4kR9Pq7J',
+        'patito',
         'Zt6Xw8Gf',
         'sV2B4LzY',
         'N9cQ1dR5',

@@ -47,7 +47,7 @@
 
 /* Ensure the cards fill their columns */
 .card {
-    max-width: 40rem;
+    max-width: 45rem;
     width: 100%; /* Ensure each card takes up the full width of its column */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     background-color: peachpuff;
@@ -63,7 +63,10 @@
 
 /* Adjust card body styling for expansion */
 .collapse {
-    padding: 0 1rem 0.75rem 1rem; /* Add some padding inside the collapsible content */
+    padding: 0 2rem 1rem 2rem; /* Add some padding inside the collapsible content */
+}
+.skip-card {
+    padding: 1.5rem 1.5rem 0.75rem 1.5rem;
 }
 
 .btn:hover {
@@ -109,8 +112,14 @@ html, body {
 }
 
 .subclue-selector {
+    padding: 0;
     margin-top: 0;
     font-family: 'PT Sans', sans-serif;
+}
+
+.subclue-selector .mt-3 {
+    margin-top: 0;
+    padding: 0;
 }
 
 .ask-hint {

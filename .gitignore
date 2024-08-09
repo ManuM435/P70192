@@ -1,0 +1,15 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore build output
+/build
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore python files
+python/test.py

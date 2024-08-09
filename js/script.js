@@ -83,3 +83,15 @@ $(document).ready(function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const revealButtons = document.querySelectorAll('.reveal-btn');
+
+    revealButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const hintCover = this.previousElementSibling;
+            hintCover.style.display = 'none';  // Hide the cover
+            this.style.display = 'none';       // Hide the "Reveal" button
+        });
+    });
+});

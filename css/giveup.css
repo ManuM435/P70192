@@ -1,0 +1,46 @@
+/* Full screen height for the split screen */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the big message */
+.big-message {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Split screen layout */
+.split-screen {
+    display: flex;
+    flex: 1;
+}
+
+/* Left side styling */
+.left-side {
+    background-color: red;
+    color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Right side styling (fun gimmick will be added later) */
+.right-side {
+    flex: 1;
+    background-color: #fff; /* Placeholder background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+}

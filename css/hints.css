@@ -34,6 +34,7 @@
 .row {
     margin-left: 0; /* Remove extra margin on the left */
     margin-right: 0; /* Remove extra margin on the right */
+    padding: 0.25rem 0 2rem 0;
 }
 
 /* Increase column width */

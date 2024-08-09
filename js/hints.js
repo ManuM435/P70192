@@ -39,35 +39,40 @@ function getRandomHint(subclue) {
     return "No hints available for this subclue.";
 }
 
-// Function to create typewriter effect with blinking cursor
-function typeWriter(text, element, speed = 50, cursorDuration = 2000) {
+// Updated typeWriter function with callback
+function typeWriter(text, element, speed, callback) {
     element.textContent = ""; // Clear existing text
     let i = 0;
-    const cursor = document.createElement('span');
-    cursor.className = 'typewriter-cursor';
-    element.appendChild(cursor);
 
     function type() {
         if (i < text.length) {
             element.textContent += text.charAt(i);
             i++;
             setTimeout(type, speed);
-        } else {
-            // Keep cursor blinking for an additional 2 seconds after typing completes
-            setTimeout(() => {
-                cursor.style.opacity = 0; // Fade out cursor after additional 2 seconds
-            }, cursorDuration);
+        } else if (callback) {
+            callback(); // Call the callback function once typing is done
         }
     }
 
     type();
 }
 
-// Event listener for "Ask for Hint" button
 document.getElementById('ask-hint-btn').addEventListener('click', function() {
+    const button = this;
+    button.disabled = true; // Disable the button
+
     const selectedSubclue = document.getElementById('subclue-select').value;
     const hint = getRandomHint(selectedSubclue);
     const hintOutput = document.getElementById('hint-output');
-    typeWriter(hint, hintOutput, 75); // Adjust speed here
+
+    const typingSpeed = 75; // Adjust speed here
+    const extraDelay = 1000; // 1 extra second after typing
+
+    typeWriter(hint, hintOutput, typingSpeed, function() {
+        setTimeout(function() {
+            button.disabled = false; // Re-enable the button
+        }, extraDelay);
+    });
 });
+
 

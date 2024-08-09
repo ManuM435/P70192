@@ -57,11 +57,12 @@
     display: flex;
     justify-content: space-between; /* Space out the title and button */
     align-items: center;
+    margin-bottom: 0;
 }
 
 /* Adjust card body styling for expansion */
 .collapse {
-    padding: 1rem; /* Add some padding inside the collapsible content */
+    padding: 0 1rem 0.75rem 1rem; /* Add some padding inside the collapsible content */
 }
 
 .btn:hover {
@@ -112,7 +113,7 @@ html, body {
 }
 
 .ask-hint {
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .hint-display {

@@ -39,9 +39,27 @@ function getRandomHint(subclue) {
     return "No hints available for this subclue.";
 }
 
+// Function to create typewriter effect
+function typeWriter(text, element, speed = 50) {
+    element.textContent = ""; // Clear existing text
+    let i = 0;
+
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+}
+
 // Event listener for "Ask for Hint" button
 document.getElementById('ask-hint-btn').addEventListener('click', function() {
     const selectedSubclue = document.getElementById('subclue-select').value;
     const hint = getRandomHint(selectedSubclue);
-    document.getElementById('hint-output').textContent = hint;
+    const hintOutput = document.getElementById('hint-output');
+    typeWriter(hint, hintOutput, 75); // Adjust speed here
 });
+

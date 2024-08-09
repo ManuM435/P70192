@@ -106,29 +106,48 @@ html, body {
     flex: 1;
 }
 
-.hint-cover {
-    background-color: lightgray;
-    padding: 0.5rem;
-    display: inline-block;
-    width: 70%; /* Adjusted width */
-    border-radius: 5px;
+.subclue-selector {
+    margin-top: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.reveal-btn {
-    margin-left: 1rem;
-    cursor: pointer;
-    padding: 0.5rem 2rem; /* Wider button */
-    background-color: #007bff;
+.ask-hint {
+    margin-top: 1rem;
+}
+
+.hint-display {
+    background-color: white;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hint-output {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+#ask-hint-btn {
+    min-width: 10rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 0.8rem; /* Smaller text size */
-    transition: background-color 0.3s ease;
-    width: 25%; /* Ensures the button is wide */
 }
 
-.reveal-btn:hover {
-    background-color: #0056b3;
+#ask-hint-btn:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+#ask-hint-btn:focus, #ask-hint-btn:active {
+    outline: none;
+    box-shadow: none;
 }
 
 

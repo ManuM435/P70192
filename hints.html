@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Entrusting and Safeguarding Isa's Anniversary Gift">
     <title>Isa &#9829 Mei Anniversary</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" href="icon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,12 +23,13 @@
     <link rel="stylesheet" href="css/others.css">
     
     <!-- Preload JS -->
-         <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="preload" href="js/script.js" as="script">
     <script src="js/script.js" defer></script>
+    <link rel="preload" href="js/hints.js" as="script">
+    <script src="js/hints.js" defer></script>
 </head>
 
 
@@ -60,20 +56,20 @@
                             <button class="btn btn-link toggle-btn" type="button" data-toggle="collapse" data-target="#hint1" aria-expanded="false" aria-controls="hint1">+</button>
                         </div>
                         <div id="hint1" class="collapse">
-                            <ul class="hint-list">
-                                <li>
-                                    <span class="hint-cover">Hint 1.1 is hidden</span>
-                                    <button class="btn reveal-btn">Reveal</button>
-                                </li>
-                                <li>
-                                    <span class="hint-cover">Hint 1.2 is hidden</span>
-                                    <button class="btn reveal-btn">Reveal</button>
-                                </li>
-                                <li>
-                                    <span class="hint-cover">Hint 1.3 is hidden</span>
-                                    <button class="btn reveal-btn">Reveal</button>
-                                </li>
-                            </ul>
+                            <div class="subclue-selector mt-3">
+                                <label for="subclue-select">Choose a subclue:</label>
+                                <select id="subclue-select" class="form-control">
+                                    <option value="1-1">Clue 1.1</option>
+                                    <option value="1-2">Clue 1.2</option>
+                                    <option value="1-3">Clue 1.3</option>
+                                </select>
+                            </div>
+                            <div class="ask-hint mt-3 text-center">
+                                <button class="btn btn-warning mt-2" id="ask-hint-btn">Ask for Hint</button>
+                            </div>
+                            <div class="hint-display mt-3 p-3 border rounded">
+                                <p id="hint-output">Select a subclue and ask for a hint.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

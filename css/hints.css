@@ -151,4 +151,19 @@ html, body {
     box-shadow: none;
 }
 
+/* Typewriter effect cursor */
+#hint-output::after {
+    content: '|';
+    animation: blink 0.75s step-end infinite;
+}
+
+/* Blinking effect */
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
 

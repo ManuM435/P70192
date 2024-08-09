@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Precomputed hints for each subclue
 const hints = {
-    "1-1": ["Think what the pose in the photo is called", "Consider the angle of the pose", "The pose resembles something specific"],
+    "1-1": ["Clue 1.1 : Think what the pose in the photo is called", "Clue 1.1 : Consider the angle of the pose", "Clue 1.1 : The pose resembles something specific"],
     "1-2": ["Look at the back of the bottle", "The label has a clue", "Check for hidden messages on the bottle"],
     "1-3": ["Focus on the color scheme", "Is there a pattern?", "Colors might indicate something"]
 };

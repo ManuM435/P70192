@@ -42,6 +42,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     position: fixed;
+    z-index: 1000;
     top: 0;
     text-decoration: none;
 }

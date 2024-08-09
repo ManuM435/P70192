@@ -105,3 +105,30 @@ html, body {
 .content {
     flex: 1;
 }
+
+.hint-cover {
+    background-color: lightgray;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 70%; /* Adjusted width */
+    border-radius: 5px;
+}
+
+.reveal-btn {
+    margin-left: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 2rem; /* Wider button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem; /* Smaller text size */
+    transition: background-color 0.3s ease;
+    width: 25%; /* Ensures the button is wide */
+}
+
+.reveal-btn:hover {
+    background-color: #0056b3;
+}
+
+

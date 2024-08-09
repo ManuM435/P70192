@@ -73,25 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.checkPassword = checkPassword;
 });
 
-$(document).ready(function() {
-    $('.toggle-btn').on('click', function() {
-        var $this = $(this);
-        if ($this.text() === '+') {
-            $this.text('-');
-        } else {
-            $this.text('+');
-        }
-    });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-    const revealButtons = document.querySelectorAll('.reveal-btn');
 
-    revealButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const hintCover = this.previousElementSibling;
-            hintCover.style.display = 'none';  // Hide the cover
-            this.style.display = 'none';       // Hide the "Reveal" button
-        });
-    });
-});

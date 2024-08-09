@@ -39,16 +39,24 @@ function getRandomHint(subclue) {
     return "No hints available for this subclue.";
 }
 
-// Function to create typewriter effect
-function typeWriter(text, element, speed = 50) {
+// Function to create typewriter effect with blinking cursor
+function typeWriter(text, element, speed = 50, cursorDuration = 2000) {
     element.textContent = ""; // Clear existing text
     let i = 0;
+    const cursor = document.createElement('span');
+    cursor.className = 'typewriter-cursor';
+    element.appendChild(cursor);
 
     function type() {
         if (i < text.length) {
             element.textContent += text.charAt(i);
             i++;
             setTimeout(type, speed);
+        } else {
+            // Keep cursor blinking for an additional 2 seconds after typing completes
+            setTimeout(() => {
+                cursor.style.opacity = 0; // Fade out cursor after additional 2 seconds
+            }, cursorDuration);
         }
     }
 

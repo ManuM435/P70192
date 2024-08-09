@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Define the passwords for each panel
     const passwords = [
         'patito',
-        'Zt6Xw8Gf',
+        'juanchi',
         'sV2B4LzY',
         'N9cQ1dR5',
         'mH7Tp6Wx',
@@ -61,7 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             document.getElementById(`password${i}`).setAttribute('disabled', 'true');
         }
+
+        // Add Enter key event listener for each password input
+        document.getElementById(`password${i}`).addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                checkPassword(i);
+            }
+        });
     }
+        
 
     // Enable the first panel if no panels are unlocked or expecting
     if (!localStorage.getItem('panel1')) {

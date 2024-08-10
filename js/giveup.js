@@ -1,32 +1,32 @@
-// JavaScript to make the "Yes" button bounce
-document.addEventListener("DOMContentLoaded", function() {
-    const yesButton = document.getElementById("bouncing-yes");
-    const rightSide = document.querySelector(".right-side");
+document.addEventListener('DOMContentLoaded', function() {
+    const circle = document.querySelector('.bouncing-circle');
+    const container = document.querySelector('.bouncing-container');
+    
+    const rem = parseFloat(getComputedStyle(document.documentElement).fontSize); // Convert rem to pixels
+    const circleSize = 3.5 * rem; // Diameter of the circle in pixels
 
-    let x = Math.random() * (rightSide.clientWidth - yesButton.clientWidth);
-    let y = Math.random() * (rightSide.clientHeight - yesButton.clientHeight);
-    let dx = 2;
-    let dy = 2;
+    let x = container.clientWidth / 2; // Start in the middle of the container
+    let y = container.clientHeight / 2; // Start in the middle of the container
+    let dx = 4; // Speed in the x direction
+    let dy = 4; // Speed in the y direction
 
-    function moveYesButton() {
+    function bounce() {
         x += dx;
         y += dy;
 
-        // Bounce off the left or right edge
-        if (x + yesButton.clientWidth > rightSide.clientWidth || x < 0) {
+        // Check for collision with walls and reverse direction
+        if (x + circleSize > container.clientWidth || x < 0) {
             dx = -dx;
         }
-
-        // Bounce off the top or bottom edge
-        if (y + yesButton.clientHeight > rightSide.clientHeight || y < 0) {
+        if (y + circleSize > container.clientHeight || y < 0) {
             dy = -dy;
         }
 
-        yesButton.style.left = `${x}px`;
-        yesButton.style.top = `${y}px`;
+        circle.style.left = x + 'px';
+        circle.style.top = y + 'px';
 
-        requestAnimationFrame(moveYesButton);
+        requestAnimationFrame(bounce);
     }
 
-    moveYesButton();
+    bounce();
 });

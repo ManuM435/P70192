@@ -6,14 +6,19 @@ body, html {
     flex-direction: column;
 }
 
+body {
+    margin-top: 80px; /* Adjust this value based on the height of your header */
+}
+
+
 /* Styling for the big message */
 .big-message {
     width: 100%;
     text-align: center;
     font-size: 2.5em;
     padding: 20px;
-    background-color: #f8f9fa;
-    border-bottom: 2px solid #ddd;
+    background-color: #57e5f5;
+    border: 1px solid #0e7c7b;
 }
 
 /* Split screen layout */
@@ -24,14 +29,26 @@ body, html {
 
 /* Left side styling */
 .left-side {
-    background-color: red;
-    color: white;
+    background-color: rgb(255, 49, 49);
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
     text-align: center;
+}
+
+.take-me-back-text {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+}
+
+.take-me-back-text:hover {
+    padding: 1.25rem 2rem;
+    border-radius: 4rem;
+    background-color: rgb(175, 0, 0);
+    cursor: pointer;
+    color: whitesmoke;
 }
 
 /* Right side styling (fun gimmick will be added later) */

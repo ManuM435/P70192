@@ -61,3 +61,19 @@ body {
     font-size: 2em;
     text-align: center;
 }
+
+.bouncing-yes {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}

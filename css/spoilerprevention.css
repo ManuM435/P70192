@@ -7,7 +7,7 @@ body, html {
 }
 
 body {
-    margin-top: 80px; /* Adjust this value based on the height of your header */
+    margin-top: 10vh; /* Adjust this value based on the height of your header */
 }
 
 
@@ -54,7 +54,7 @@ body {
 /* Right side styling (fun gimmick will be added later) */
 .right-side {
     flex: 1;
-    background-color: #fff; /* Placeholder background */
+    background-color: #c7ff82cd; /* Placeholder background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,8 +77,8 @@ body {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
-    background-color: #afafaf; /* Red color for the circle */
-    color: #000000;
+    background-color: #085500; /* Red color for the circle */
+    color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;

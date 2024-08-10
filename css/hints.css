@@ -1,6 +1,6 @@
 #hints {
     margin: 2rem auto;
-    margin-top: 3rem;
+    margin-top: 10vh;
     width: 90%; /* Adjust the width as needed */
     max-width: 1600px; /* Adjust the width as needed */
     padding: 0 1rem; /* Add padding to the sides */
@@ -33,7 +33,7 @@
 }
 
 .hint-container {
-     border: 1px solid #f8ad7e9f;
+    border: 1px solid #f8ad7e9f;
     margin-top: 0;
     margin-bottom: 2rem;
     padding: 0 0 2rem 0;

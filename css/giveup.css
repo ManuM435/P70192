@@ -1,0 +1,27 @@
+body {
+    margin-top: 10vh; /* Adjust this value based on the height of your header */
+    text-align: center;
+}
+
+.reveal-button {
+    display: inline-block; /* Makes the div fit its content */
+    text-align: center;
+    font-size: 6em;
+    margin-top: 3rem;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    transition: .3s;
+    border-radius: 5rem;
+    padding: 0.5rem 2.5rem;
+}
+
+.reveal-button:hover {
+    padding: 0.5rem 2.5rem;
+    border-radius: 5rem;
+    background-color: rgb(175, 76, 0);
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+}

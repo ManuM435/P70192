@@ -89,10 +89,9 @@ a {
     row-gap: 2.2rem;
 }
 
-@media (max-width: 768px) { /* Adjust the max-width value based on your needs */
+@media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 2rem; /* Adjust the row gap as needed */
+        grid-template-columns: 1fr; /* 1 column for mobile devices */
     }
     .navLink {
         font-size: 1rem;

@@ -9,8 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let x = container.clientWidth / 2; // Start in the middle of the container
     let y = container.clientHeight / 2; // Start in the middle of the container
-    let dx = 2.5; // Speed in the x direction
-    let dy = 2.5; // Speed in the y direction
+
+    const speed = 3.25;
+    const speedNivelMery = 0.25;
+
+    let dx = speedNivelMery; // Speed in the x direction
+    let dy = speedNivelMery; // Speed in the y direction
 
     // Calculate heights and adjust container height
     const headerHeight = header.offsetHeight;

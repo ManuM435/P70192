@@ -57,6 +57,11 @@ function typeWriter(text, element, speed, callback) {
     type();
 }
 
+function revealAnswer(element) {
+    element.style.display = 'none';
+    element.nextElementSibling.style.display = 'inline';
+}
+
 document.getElementById('ask-hint-btn').addEventListener('click', function() {
     const button = this;
     button.disabled = true; // Disable the button
@@ -74,5 +79,6 @@ document.getElementById('ask-hint-btn').addEventListener('click', function() {
         }, extraDelay);
     });
 });
+
 
 

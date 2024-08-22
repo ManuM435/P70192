@@ -173,6 +173,19 @@ html, body {
     will-change: opacity;
 }
 
+.reveal-text {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.reveal-text:hover {
+    background-color: lightblue;
+}
+
 /* Typewriter effect cursor */
 #hint-output::after {
     content: '|';
@@ -202,3 +215,4 @@ html, body {
     color: #888888; /* Ensure the text color stays the same */
     border-color: #c0c0c0; /* Ensure the border stays the same */
 }
+

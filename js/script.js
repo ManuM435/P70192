@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const passwords = [
         'patito',
         'juanchi',
-        'sV2B4LzY',
-        'N9cQ1dR5',
-        'mH7Tp6Wx',
-        'Jk3Ue8Fz',
+        'roomba1',
+        'roomba2',
+        'roomba3',
+        'This... is Berk. The best kept secret this side of, well, anywhere. Granted, it may not look like much, but this wet heap of rock packs more than a few surprises. Life here is amazing, just not for the faint of heart. See, where most folks enjoy hobbies like whittling or needlepoint, we Berkians prefer a little something we like to call-- DRAGON RACING!',
         'mery',
-        'xS7Lm9Qp',
-        'C5zJ2yV8',
-        'F3dP9rN4',
-        'W7tL0mX6',
-        'E1cQ8Zr3'
+        'roomba5',
+        'roomba6',
+        'roomba7',
+        'roomba8',
+        'roomba9'
     ];
 
     // Function to check the password

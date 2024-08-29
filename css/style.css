@@ -205,7 +205,24 @@ a {
     color: black;
 } */
 
+#downloadButton {
+    padding: 1rem 2rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 2rem;
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    color: white;
+    cursor: not-allowed;
+    background-color: #ffeb99; /* Light yellow when disabled */
+}
 
+/* Style when button is enabled */
+#downloadButton:enabled {
+    color: black;
+    background-color: #ffd700; /* Darker yellow when enabled */
+    cursor: pointer;
+}
 
 
 

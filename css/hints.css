@@ -143,32 +143,6 @@ html, body {
     align-items: center;
 }
 
-#hint-output {
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #333;
-}
-
-#ask-hint-btn {
-    min-width: 10rem;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #eca440;
-    border-color: #da8e24;
-    color: white;
-}
-
-#ask-hint-btn:hover {
-    background-color: #d88005;
-    border-color: #995b05;
-}
-
-#ask-hint-btn:focus, #ask-hint-btn:active {
-    outline: none;
-    box-shadow: none;
-}
-
 .typewriter-cursor {
     will-change: opacity;
 }
@@ -186,12 +160,6 @@ html, body {
     background-color: lightblue;
 }
 
-/* Typewriter effect cursor */
-#hint-output::after {
-    content: '|';
-    animation: blink 0.75s step-end infinite;
-}
-
 /* Blinking effect */
 @keyframes blink {
     from, to {
@@ -202,12 +170,51 @@ html, body {
     }
 }
 
-#ask-hint-btn:disabled {
+.hint-output {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+.ask-hint-btn {
+    min-width: 10rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eca440;
+    border-color: #da8e24;
+    color: white;
+}
+
+.ask-hint-btn:hover {
+    background-color: #d88005;
+    border-color: #995b05;
+}
+
+.ask-hint-btn:focus,
+.ask-hint-btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Typewriter effect cursor */
+.hint-output::after {
+    content: '|';
+    animation: blink 0.75s step-end infinite;
+}
+
+.ask-hint-btn:disabled {
     background-color: #d3d3d3; /* Light gray background */
     color: #888888; /* Darker gray text color */
     cursor: not-allowed; /* Change cursor to indicate it's disabled */
     border-color: #c0c0c0; /* Light gray border */
     opacity: 0.6; /* Slightly reduce opacity */
+}
+
+.ask-hint-btn:disabled:hover {
+    background-color: #d3d3d3; /* Ensure the background stays the same */
+    color: #888888; /* Ensure the text color stays the same */
+    border-color: #c0c0c0; /* Ensure the border stays the same */
 }
 
 #ask-hint-btn:disabled:hover {

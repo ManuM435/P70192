@@ -51,11 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Precomputed hints for each subclue
 const hints = {
     "1-1": ["Think about what the pose in the photo is called", "Consider the angle of the pose", "The pose resembles something specific"],
-    "1-2": ["Look at the back of the bottle", "The label has a clue", "Check for hidden messages on the bottle"],
-    "1-3": ["Focus on the color scheme", "Is there a pattern?", "Colors might indicate something"],
-    "2-1": [" ", " ", " "],
-    "2-2": [" ", " ", " "],
-    "2-3": [" ", " ", " "],
+    "2-1": ["The clue is insie the backpack compartment", "The lock's password is the same as it was 7 months ago...", "Acordate cuando elegimos los horarios"], 
+    "2-2": ["The Roman Empire"],
     "3-1": [" ", " ", " "],
     "3-2": [" ", " ", " "],
     "3-3": [" ", " ", " "],

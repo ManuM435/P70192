@@ -205,6 +205,10 @@ a {
     color: black;
 } */
 
+
+
+/* For Clue Two */
+
 #downloadButton {
     padding: 1rem 2rem;
     font-size: 18px;
@@ -224,5 +228,19 @@ a {
     cursor: pointer;
 }
 
+/* For Clue Seven */
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100vw; /* Grid spans the full width of the viewport */
+    height: 100vh; /* Grid spans the full height of the viewport */
+}
+
+.image-grid img {
+    width: 33.33vw; /* Each image takes one-third of the viewport width */
+    height: 50vh;   /* Each image takes half of the viewport height */
+    object-fit: cover; /* Ensures images cover the grid area without distortion */
+}
 

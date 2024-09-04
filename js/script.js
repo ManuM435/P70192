@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Define the passwords for each panel
     const passwords = [
-        'patito',
-        'juanchi',
-        'roomba1',
-        'roomba2',
-        'roomba3',
+        'patito', // Clue 1
+        'heuristica', // Clue 2
+        'sandwich de atun', // Clue 3
+        'NO FREE LUNCH', // Clue 4
+        'Todo en un solo lugar', // Clue 5
         'This... is Berk. The best kept secret this side of, well, anywhere. Granted, it may not look like much, but this wet heap of rock packs more than a few surprises. Life here is amazing, just not for the faint of heart. See, where most folks enjoy hobbies like whittling or needlepoint, we Berkians prefer a little something we like to call-- DRAGON RACING!',
         'mery',
-        'roomba5',
-        'roomba6',
-        'roomba7',
-        'roomba8',
-        'roomba9'
+        '8694', // Clue 8
+        'marcelo (el goat)', // Clue 9
+        'nachos', // Clue 10
+        'roomba8', // Clue 11
+        'roomba9' // Clue 12
     ];
 
     // Function to check the password

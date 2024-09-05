@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Todo en un solo lugar', // Clue 5
         'This... is Berk. The best kept secret this side of, well, anywhere. Granted, it may not look like much, but this wet heap of rock packs more than a few surprises. Life here is amazing, just not for the faint of heart. See, where most folks enjoy hobbies like whittling or needlepoint, we Berkians prefer a little something we like to call-- DRAGON RACING!',
         'mery',
-        '8694', // Clue 8
+        '', // Hay que correr el codigo en su compu y ver la password
         'marcelo (el goat)', // Clue 9
         'nachos', // Clue 10
         'roomba8', // Clue 11

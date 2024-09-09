@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '9426', // Hay que correr el codigo en su compu y ver la password
         'marcelo (el goat)', // Clue 9
         'nachos', // Clue 10
-        'roomba8', // Clue 11
+        '9 de Septiembre', // Clue 11
         'roomba9' // Clue 12
     ];
 

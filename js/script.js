@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'marcelo (el goat)', // Clue 9
         'nachos', // Clue 10
         '9 de Septiembre', // Clue 11
-        'roomba9' // Clue 12
+        '992023' // Clue 12
     ];
 
     // Function to check the password

@@ -228,6 +228,8 @@ a {
     cursor: pointer;
 }
 
+
+
 /* For Clue Seven */
 
 .image-grid {
@@ -244,3 +246,15 @@ a {
     object-fit: cover; /* Ensures images cover the grid area without distortion */
 }
 
+/* For Clue 10, A */
+
+.burger-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 25vh;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
